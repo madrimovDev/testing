@@ -89,18 +89,18 @@ export default function Drawer({ onClose, open }: Props) {
 				weekDays: o.weekDays,
 			})),
 		};
-		mutate({
-			name: makedObj.name,
-			direction_id: makedObj.direction_id,
-			lessonOptions: makedObj.options,
-			main_teacher: makedObj.main_teacher,
-			room_id: makedObj.room_id,
-			start_date: makedObj.start_date.toISOString(),
-			start_time: dayjs(makedObj.start_time, {
-				locale: "uz",
-				utc: true,
-			}).toISOString(),
-		});
+		// mutate({
+		// 	name: makedObj.name,
+		// 	direction_id: makedObj.direction_id,
+		// 	lessonOptions: makedObj.options,
+		// 	main_teacher: makedObj.main_teacher,
+		// 	room_id: makedObj.room_id,
+		// 	start_date: makedObj.start_date.toISOString(),
+		// 	start_time: dayjs(makedObj.start_time, {
+		// 		locale: "uz",
+		// 		utc: true,
+		// 	}).toISOString(),
+		// });
 	};
 	const rules = [{ required: true }];
 	return (

@@ -16,6 +16,12 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 					<ConfigProvider
 						theme={{
 							algorithm: theme.darkAlgorithm,
+							components: {
+								Button: {
+									ghostBg: theme.getDesignToken().blue1,
+									colorBgSpotlight: '10px'
+								}
+							}
 						}}
 					>
 						<App />
